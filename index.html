@@ -19,14 +19,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <title>My first webpage, with JavaScript</title>
+    <title>My first webpage, with real JavaScript</title>
   </head>
   <body>
-    <script>
-      function myButtonClicked() {
-        alert("EEYO GUYS WHATS POPPIN!!1!")
-      }
-    </script>
+    <script> src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
@@ -34,21 +30,15 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="page-content" style="padding-left: 100px">
-          Click/Tap the belly button.
-        </div>
-        <!-- Colored raised button -->
+        <!-- Raised button with ripple -->
         <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Click/Tap on my abs
+          Say "Hello, World!"
         </button>
-        <br />
-        <br />
-        <p>
-          <a href="./index2.html">Heres a Hint! Click on the link!</a>
-        </p>
+        <!-- basic text -->
+        <div id="hello-world"></div>
       </main>
     </div>
   </body>
